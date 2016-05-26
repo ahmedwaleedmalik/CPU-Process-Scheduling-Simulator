@@ -2,6 +2,8 @@
 C++ program to simulate various cpu scheduling algorithms
 
 OWNER: Ahmed Waleed Malik
+
+
 EMAIL: waleed-malik@outlook.com
 
 A piece of code written in C++ langauge, which simulates CPU scheduling in an operating system. The 
