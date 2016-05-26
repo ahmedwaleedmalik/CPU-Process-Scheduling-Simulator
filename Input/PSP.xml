@@ -1,0 +1,97 @@
+<ProjectInput>
+<Configuration>
+<SchedulingPolicy> PS </SchedulingPolicy>
+<Preemptive>Yes</Preemptive>
+<NumberofDisks>5</NumberofDisks>
+<NumberofPrinters>5</NumberofPrinters>
+</Configuration>
+
+<Processes number="6">
+<Process ID="1">
+<ArrivalTime>0</ArrivalTime>
+<Priority>low</Priority>
+<Type>IO_Bound</Type>
+<code>
+WRITE SCREEN
+READ KEYBOARD
+COMPUTE
+READ MEMORY
+COMPUTE
+WRITEMEMORY
+WRITE PRINTER
+</code>
+</Process>
+<Process ID="2">
+<ArrivalTime>3</ArrivalTime>
+<Priority>Low</Priority>
+<Type>CPU_Bound</Type>
+<code>
+COMPUTE
+READ MEMORY
+COMPUTE
+READ MEMORY
+COMPUTE
+</code>
+</Process>
+
+<Process ID="3">
+<ArrivalTime>5</ArrivalTime>
+<Priority>High</Priority>
+<Type>CPU_Bound</Type>
+<code>
+COMPUTE
+READ MEMORY
+COMPUTE
+READ MEMORY
+COMPUTE
+READ MEMORY
+COMPUTE
+READ MEMORY
+COMPUTE
+</code>
+</Process>
+
+
+<Process ID="4">
+<ArrivalTime>6</ArrivalTime>
+<Priority>Low</Priority>
+<Type>CPU_Bound</Type>
+<code>
+COMPUTE
+READ MEMORY
+COMPUTE
+</code>
+</Process>
+
+
+<Process ID="5">
+<ArrivalTime>1</ArrivalTime>
+<Priority>Low</Priority>
+<Type>CPU_Bound</Type>
+<code>
+COMPUTE
+READ MEMORY
+COMPUTE
+READ MEMORY
+</code>
+</Process>
+
+<Process ID="6">
+<ArrivalTime>4</ArrivalTime>
+<Priority>High</Priority>
+<Type>CPU_Bound</Type>
+<code>
+COMPUTE
+READ MEMORY
+COMPUTE
+READ MEMORY
+COMPUTE
+READ MEMORY
+COMPUTE
+READ MEMORY
+COMPUTE
+</code>
+</Process>
+
+</Processes>
+</ProjectInput>
